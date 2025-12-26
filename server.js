@@ -7,7 +7,6 @@ console.log(">>> THIS SERVER.JS FILE IS RUNNING <<<");
 
 const adminRoutes = require('./routes/adminRoutes');
 const appointmentRoutes = require('./routes/appointmentRoutes');
-const therapyRoutes = require('./routes/therapyRoutes');
 
 const app = express();
 
@@ -29,7 +28,6 @@ mongoose
 // Routes
 app.use('/admin', adminRoutes);
 app.use('/appointments', appointmentRoutes);
-app.use('/therapies', therapyRoutes);
 
 // Start server (ALWAYS LAST)
 const PORT = process.env.PORT || 5000;
